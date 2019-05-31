@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  background-color: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  font-family: "Roboto", sans-serif;
+  color: #424242;
+  h1 {
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.product {
+  width: 18rem;
+  min-height: 20rem;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  font-family: "Merienda", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.2;
+  }
+  // mix-blend-mode: luminosity;
+}
+
+.product-1 {
+  background: lightpink;
+}
+.product-2 {
+  background: lightsteelblue;
+}
+
+.product-3 {
+  background: lightslategrey;
+}
+
+.product-4 {
+  background: lightslategray;
+}
+
+.primary-btn {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: none;
+  background: rgba(71, 61, 139, 0.9);
+  color: #fff;
+  font-family: "Merienda", cursive;
+  font-size: 1.2rem;
+  width: 100%;
+  cursor: pointer;
+}
