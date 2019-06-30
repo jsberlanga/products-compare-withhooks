@@ -1,14 +1,13 @@
 import React from "react";
-import { products } from "../products.json";
 import Product from "./Product";
 
-const ProductList = () => {
+const ProductList = ({ products, compare }) => {
   return (
     <div>
       <h1>Products List</h1>
       <div className="products">
         {products.map(product => (
-          <Product product={product} key={product.id} />
+          <Product product={product} key={product.id} compare={compare} />
         ))}
       </div>
     </div>
